@@ -1,26 +1,85 @@
 {
   "layout": "magazine",
-  "emoji": "📦",
-  "title": "Project Title",
-  "tagline": "A short description of what this project does and why it exists.",
-  "tags": [ "Technology", "Framework","Database","Category" ],
+  "emoji": "🧮",
+  "title": "Desktop Calculator",
+  "tagline": "A Windows desktop calculator built with C# and Windows Forms, featuring chained arithmetic operations, robust error handling, and intuitive calculator-style interaction.",
+  "tags": [
+    "C#",
+    ".NET Framework",
+    "Windows Forms",
+    "Desktop Application",
+    "GUI"
+  ],
   "demo": "https://www.w3schools.com/html/mov_bbb.mp4",
   "screenshots": [
-    { "src": "./docs/screenshot-1.jpg","label": "Screenshot One" },
-    { "src": "./docs/screenshot-2.jpg","label": "Screenshot Two" },
-    { "src": "./docs/screenshot-3.jpg","label": "Screenshot Three" }
+    {
+      "src": "./docs/calculator-idle.jpg",
+      "label": "Calculator Interface"
+    },
+    {
+      "src": "./docs/basic-addition.jpg",
+      "label": "Basic Arithmetic"
+    },
+    {
+      "src": "./docs/serial-operations.jpg",
+      "label": "Chained Calculations"
+    },
+    {
+      "src": "./docs/repeated-equals.jpg",
+      "label": "Repeated Equals Operation"
+    },
+    {
+      "src": "./docs/divide-by-zero.jpg",
+      "label": "Division by Zero Handling"
+    },
+    {
+      "src": "./docs/overflow.jpg",
+      "label": "Overflow Protection"
+    },
+    {
+      "src": "./docs/large-calculation.jpg",
+      "label": "Complex Calculation"
+    }
   ],
   "features": [
-    { "title": "Feature One", "desc": "Description of the first feature." },
-    { "title": "Feature Two","desc": "Description of the second feature." },
-    { "title": "Feature Three","desc": "Description of the third feature." },
-    { "title": "Feature Four","desc": "Description of the fourth feature." }
+    {
+      "title": "Calculator-Style Input",
+      "desc": "Implements an intuitive input flow that mirrors the behavior of a traditional desktop calculator."
+    },
+    {
+      "title": "Sequential Operations",
+      "desc": "Supports chained arithmetic operations without requiring operator precedence, matching the behavior of the Windows Calculator."
+    },
+    {
+      "title": "Robust Error Handling",
+      "desc": "Gracefully detects and handles invalid operations such as division by zero and integer overflow without crashing."
+    },
+    {
+      "title": "State-Based Calculation Engine",
+      "desc": "Maintains calculation state between button presses, enabling continuous calculations and repeated equals operations."
+    }
   ],
-  "context": "Provide background information about the project, the problem it solves, or the goals behind its development.",
+  "context": "Desktop Calculator is a Windows Forms application that recreates the functionality of a traditional desktop calculator. The project focuses on event-driven programming, state management, arithmetic processing, and responsive user interaction. Rather than evaluating mathematical expressions, the application processes user input incrementally, replicating the behavior of standard calculator software while ensuring reliable error handling and a consistent user experience.",
   "tech": [
-    { "name": "Technology One","role": "Purpose or responsibility" },
-    { "name": "Technology Two","role": "Purpose or responsibility" },
-    { "name": "Technology Three","role": "Purpose or responsibility" },
-    { "name": "Technology Four","role": "Purpose or responsibility" }
+    {
+      "name": "C#",
+      "role": "Implements the calculator engine, arithmetic operations, and application logic."
+    },
+    {
+      "name": ".NET Framework",
+      "role": "Provides the runtime environment and standard libraries."
+    },
+    {
+      "name": "Windows Forms",
+      "role": "Creates the graphical user interface and handles user interaction."
+    },
+    {
+      "name": "Event-Driven Programming",
+      "role": "Processes button clicks and manages application state throughout calculations."
+    },
+    {
+      "name": "Exception Handling",
+      "role": "Detects and handles invalid calculations such as overflow and division by zero."
+    }
   ]
 }
